@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Geometry: Tangent vs. Non-Tangent</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>The Geometry Lab: Tangents</h1>
+        <p class="subtitle">Move the line with your mouse to discover the golden rule of tangents!</p>
+    </header>
+
+    <div class="container">
+        <div class="visualizer-card">
+            <canvas id="geometryCanvas" width="450" height="400"></canvas>
+            <div class="controls">
+                <div id="status" class="status-badge status-secant">Non-Tangent (Secant)</div>
+                <p class="instruction">💡 <b>Action:</b> Move your cursor inside the grid to control the line!</p>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <div class="concept tangent">
+                <h2>📐 What is a Tangent?</h2>
+                <p>Think of a tangent line as a **"high-five"** to a curve. It perfectly grazes the circle at exactly <b>one single point</b> without crossing through it.</p>
+                <ul>
+                    <li><b>Intersection:</b> Exactly 1 point.</li>
+                    <li><b>Real-world example:</b> A skateboard wheel rolling smoothly on the flat ground. The ground is tangent to the wheel!</li>
+                </ul>
+            </div>
+
+            <div class="concept non-tangent">
+                <h2>❌ What is a Non-Tangent?</h2>
+                <p>If a line does anything else, it is non-tangent. Most commonly, it becomes a <b>Secant line</b>—cutting right through the circle like a sword.</p>
+                <ul>
+                    <li><b>Intersection:</b> 2 points (cuts through) or 0 points (misses completely).</li>
+                    <li><b>Real-world example:</b> An arrow piercing right through an apple.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Linking the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
